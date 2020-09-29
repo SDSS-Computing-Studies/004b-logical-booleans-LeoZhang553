@@ -18,3 +18,14 @@ Example:
 Enter a number: 8
 8 is only a perfect cube.
 """
+
+N=input('enter an number')
+N=int(N)
+print(N,end=" ")
+import math
+if math.sqrt(N)==int(math.sqrt(N)) and N**(1/3)==int(N**(1/3)):
+    print('is both a perfect square and a perfect cube.')
+elif math.sqrt(N)==int(math.sqrt(N)):
+    print('is only a perfect square.')
+elif N**(1/3)==int(N**(1/3)):
+    print('is only a perfect cube.')

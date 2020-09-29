@@ -26,3 +26,43 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+L1=input('enter an integer=>')
+L2=input('enter an integer=>')
+L3=input('enter an integer=>')
+L1=int(L1)
+L2=int(L2)
+L3=int(L3)
+if L1 < L3 and L2 < L3:
+    a=L1**2
+    b=L2**2
+    c=L3**2
+elif L1 > L2 and L1 > L3:
+    c=L1**2
+    b=L2**2
+    a=L3**2
+elif L2 > L1 and L2 > L3:
+    a=L1**2
+    c=L2**2
+    b=L3**2
+elif L1 < L2 and L1 < L3:
+    a=L3**2
+    b=L2**2
+    c=L1**2
+elif L2 < L1 and L2 < L3:
+    a=L3**2
+    b=L1**2
+    c=L2**2
+elif L3 < L2 and L3 < L1:
+    a=L3**2
+    b=L1**2
+    c=L3**2
+if a+b == c:
+    print(L1,end=",")
+    print(L2,end=",")
+    print(L3,end=' ')
+    print('form a Pythagorean Triple')
+else:
+    print(L1,end=",")
+    print(L2,end=",")
+    print(L3,end=' ')
+    print('do not form a Pythagorean Triple')
