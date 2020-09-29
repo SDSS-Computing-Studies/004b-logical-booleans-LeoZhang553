@@ -32,31 +32,12 @@ L3=input('enter an integer=>')
 L1=int(L1)
 L2=int(L2)
 L3=int(L3)
-if L1 < L3 and L2 < L3:
-    a=L1**2
-    b=L2**2
-    c=L3**2
-elif L1 > L2 and L1 > L3:
-    c=L1**2
-    b=L2**2
-    a=L3**2
-elif L2 > L1 and L2 > L3:
-    a=L1**2
-    c=L2**2
-    b=L3**2
-elif L1 < L2 and L1 < L3:
-    a=L3**2
-    b=L2**2
-    c=L1**2
-elif L2 < L1 and L2 < L3:
-    a=L3**2
-    b=L1**2
-    c=L2**2
-elif L3 < L2 and L3 < L1:
-    a=L3**2
-    b=L1**2
-    c=L3**2
-if a+b == c:
+
+a=L1**2
+b=L2**2
+c=L3**2
+
+if a+b == c or a+c == b or b+c==a:
     print(L1,end=",")
     print(L2,end=",")
     print(L3,end=' ')
