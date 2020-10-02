@@ -22,10 +22,11 @@ Enter a number: 8
 N=input('enter an number')
 N=int(N)
 print(N,end=" ")
+C=N**(1/3)
 import math
-if math.sqrt(N)==int(math.sqrt(N)) and N**(1/3)==int(N**(1/3)):
+if math.sqrt(N)==int(math.sqrt(N)) and C==int(C):
     print('is both a perfect square and a perfect cube.')
 elif math.sqrt(N)==int(math.sqrt(N)):
     print('is only a perfect square.')
-elif N**(1/3)==int(N**(1/3)):
+elif C==int(C):
     print('is only a perfect cube.')

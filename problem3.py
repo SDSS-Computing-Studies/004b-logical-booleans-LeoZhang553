@@ -41,9 +41,9 @@ if a+b == c or a+c == b or b+c==a:
     print(L1,end=",")
     print(L2,end=",")
     print(L3,end=' ')
-    print('form a Pythagorean Triple')
+    print('form a Pythagorean triple')
 else:
     print(L1,end=",")
     print(L2,end=",")
     print(L3,end=' ')
-    print('do not form a Pythagorean Triple')
+    print('do not form a Pythagorean triple')
