@@ -26,9 +26,9 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
-L1=input('enter an integer=>')
-L2=input('enter an integer=>')
-L3=input('enter an integer=>')
+L1=(input('enter an integer=>')).strip()
+L2=(input('enter an integer=>')).strip()
+L3=(input('enter an integer=>')).strip()
 L1=int(L1)
 L2=int(L2)
 L3=int(L3)

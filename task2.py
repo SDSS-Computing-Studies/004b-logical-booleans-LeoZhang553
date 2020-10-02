@@ -19,7 +19,7 @@ Enter a number: 8
 8 is only a perfect cube.
 """
 
-N=input('enter an number')
+N=(input('enter an number')).strip()
 N=int(N)
 print(N,end=" ")
 C=N**(1/3)
