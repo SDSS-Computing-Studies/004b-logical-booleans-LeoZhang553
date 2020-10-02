@@ -36,14 +36,11 @@ L3=int(L3)
 a=L1**2
 b=L2**2
 c=L3**2
+print(L1,end=",")
+print(L2,end=",")    
+print(L3,end=' ')
 
 if a+b == c or a+c == b or b+c==a:
-    print(L1,end=",")
-    print(L2,end=",")
-    print(L3,end=' ')
     print('form a Pythagorean triple')
 else:
-    print(L1,end=",")
-    print(L2,end=",")
-    print(L3,end=' ')
     print('do not form a Pythagorean triple')
